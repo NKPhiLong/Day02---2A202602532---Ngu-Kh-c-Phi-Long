@@ -8,10 +8,11 @@
 - Mã học viên: 2A202602532
 - Vai trò / bối cảnh (VD: sinh viên năm X, intern PM, ...): Sinh viên năm cuối, Đại học Bách khoa Hà Nội
 - Công việc hằng tuần (3-5 gạch đầu dòng để soi problem):
-  -
-  -
-  -
-  -
+  - Viết daily standup và weekly update gửi mentor (~70 phút/tuần)
+  - Đọc code cũ để hiểu module trước khi nhận task sửa (~4 tiếng/module)
+  - Hỏi lại mentor/senior về setup, quy trình deploy, ai phụ trách service nào (4-5 lần/tuần)
+  - Viết mô tả PR và tự review trước khi gửi reviewer (~3 PR/tuần)
+  - Tự làm đề cương ôn thi từ slide, vở ghi và đề khóa trước (~6 tiếng/môn, cuối kỳ)
 
 ---
 
@@ -56,8 +57,8 @@ Giữ bài nào: actor cụ thể, workflow vẽ được 3-7 bước, bottlenec
 
 | Rank | Problem (copy từ bảng scan) | Vì sao chọn (2-3 ý) | Điều còn chưa chắc |
 |---|---|---|---|
-| 1 | (#1) Ôn thi cuối kỳ: gom slide, vở ghi, đề khóa trước thành một bản đề cương ôn dùng được | Workflow lặp lại mỗi kỳ và tôi tự làm nên vẽ được từng bước; bottleneck nằm đúng 1 bước (viết lại thành mạch kiến thức); baseline thời gian đo được bằng cách bấm giờ; cả lớp cùng gặp nên dễ validate nhanh | "Đề cương đủ tốt" khó đo — phải quy về chỉ số phủ đề cũ thay vì cảm tính; nội dung slide mỗi môn rất khác nhau nên có thể không tổng quát |
-| 2 | (#6) Hỏi lại mentor/senior cùng một loại câu hỏi vì không có chỗ tra tập trung | Pain không chỉ của tôi mà cả mentor bị ngắt việc, nên impact rộng hơn; đếm được số lần hỏi/tuần; so được rõ 4 mức vì Rule (FAQ + checklist) đã giải được phần lớn | Chưa chắc tài liệu nội bộ đủ để AI tra ra câu trả lời đúng; số liệu mới là tôi tự nhớ, chưa hỏi lại mentor |
+| 1 | (#1) Ôn thi cuối kỳ: gom slide, vở ghi, đề khóa trước thành một bản đề cương ôn dùng được | Workflow lặp lại mỗi kỳ và em tự làm nên vẽ được từng bước; bottleneck nằm đúng 1 bước (viết lại thành mạch kiến thức); baseline thời gian đo được bằng cách bấm giờ; cả lớp cùng gặp nên dễ validate nhanh | "Đề cương đủ tốt" khó đo — phải quy về chỉ số phủ đề cũ thay vì cảm tính; nội dung slide mỗi môn rất khác nhau nên có thể không tổng quát |
+| 2 | (#6) Hỏi lại mentor/senior cùng một loại câu hỏi vì không có chỗ tra tập trung | Pain không chỉ của em mà cả mentor bị ngắt việc, nên impact rộng hơn; đếm được số lần hỏi/tuần; so được rõ 4 mức vì Rule (FAQ + checklist) đã giải được phần lớn | Chưa chắc tài liệu nội bộ đủ để AI tra ra câu trả lời đúng; số liệu mới là em tự nhớ, chưa hỏi lại mentor |
 | 3 | (#8) Tìm lại quyết định kỹ thuật cũ nằm rải trong Slack / Confluence / comment PR | Có hậu quả rõ ngoài thời gian: không tìm ra lý do thì dễ sửa nhầm logic cố ý, gây bug; tỉ lệ "tìm không ra" là bằng chứng đo được; cả team cùng gặp | Data access phức tạp (Slack/Confluence nội bộ, có thể không được phép cho AI đọc); dễ phình scope thành "search toàn công ty" |
 
 ### 2.2. Problem Cards chi tiết (lặp lại cho cả 3 cards)
@@ -68,13 +69,13 @@ Giữ bài nào: actor cụ thể, workflow vẽ được 3-7 bước, bottlenec
 
 ```text
 Problem 1 câu:
-Trước mỗi kỳ thi, tôi mất khoảng 6 giờ/môn để gom slide, vở ghi và đề khóa trước
+Trước mỗi kỳ thi, em mất khoảng 6 giờ/môn để gom slide, vở ghi và đề khóa trước
 thành một bản đề cương ôn được, trong đó bước viết lại thành mạch kiến thức có cấu
 trúc tốn nhất và thường bị làm sát ngày thi.
 
 Actor:
 Sinh viên năm cuối ĐH Bách khoa Hà Nội tự làm đề cương ôn thi cuối kỳ
-(và 2-3 bạn cùng lớp mỗi kỳ xin dùng lại bản của tôi).
+(và 2-3 bạn cùng lớp mỗi kỳ xin dùng lại bản của em).
 
 Thời điểm / bối cảnh:
 2-3 tuần trước lịch thi cuối kỳ, làm cho khoảng 5 môn.
@@ -95,8 +96,8 @@ không biết bắt đầu từ đâu.
 
 Impact:
 ~6.25 giờ x 5 môn = khoảng 30 giờ/kỳ. Vì tốn thời gian nên thường làm sát ngày thi,
-dẫn tới ôn vội và dễ bỏ sót phần trọng tâm. Mỗi kỳ có 2-3 bạn xin lại bản của tôi
-nên chỗ nào tôi tóm thiếu thì các bạn cũng thiếu theo.
+dẫn tới ôn vội và dễ bỏ sót phần trọng tâm. Mỗi kỳ có 2-3 bạn xin lại bản của em
+nên chỗ nào em tóm thiếu thì các bạn cũng thiếu theo.
 
 Success metric:
 - Thời gian làm đề cương: từ ~375 phút/môn xuống dưới 180 phút/môn
@@ -112,7 +113,7 @@ slide để cập nhật.
 
 AI hypothesis:
 AI đọc slide + đề khóa trước, dựng bản nháp đề cương theo template và đánh dấu phần
-xuất hiện nhiều trong đề cũ. Tôi tự kiểm và sửa, đặc biệt là công thức và định nghĩa.
+xuất hiện nhiều trong đề cũ. Em tự kiểm và sửa, đặc biệt là công thức và định nghĩa.
 
 Quick gut:
 [ ] No AI / process fix
@@ -136,7 +137,7 @@ FUTURE STATE — 170 phút/môn
 [1 Gom slide vào 1 thư mục: 10' - thủ công/rule]
 → [2 AI dựng nháp đề cương theo template: 5' - AI]
 → [3 AI đối chiếu đề cũ, đánh dấu phần trọng tâm: 5' - AI]
-→ [4 Tôi tự kiểm + sửa, nhất là công thức/định nghĩa: 90']  <-- human boundary
+→ [4 Em tự kiểm + sửa, nhất là công thức/định nghĩa: 90']  <-- human boundary
 → [5 Ôn + tự kiểm bằng đề cũ: 60']
 
 Boundary: AI chỉ dựng nháp và đánh dấu trọng tâm; AI không được tự thêm kiến thức
@@ -153,7 +154,7 @@ File đính kèm (nếu vẽ riêng): `01-individual-problem-scan-workflow-card-
 
 ```text
 Problem 1 câu:
-Trong những tuần đầu thực tập, tôi phải hỏi lại mentor/senior 4-5 lần/tuần những câu
+Trong những tuần đầu thực tập, em phải hỏi lại mentor/senior 4-5 lần/tuần những câu
 lặp lại (setup, quy trình deploy, ai phụ trách service nào) vì không có chỗ tra tập
 trung; mỗi lần mentor mất ~10 phút và bị ngắt mạch làm việc.
 
@@ -172,17 +173,17 @@ Current workflow 3-7 bước:
 6. Nhận câu trả lời, làm tiếp — câu trả lời nằm trong DM, không ai lưu lại
 
 Bottleneck:
-Bước 5 — thời gian chờ của tôi cộng với việc mentor bị ngắt mạch. Nặng hơn là kiến
+Bước 5 — thời gian chờ của em cộng với việc mentor bị ngắt mạch. Nặng hơn là kiến
 thức trả lời xong thì trôi vào DM, nên đợt intern sau lại hỏi đúng câu đó.
 
 Impact:
-Tôi: ~4-5 lần/tuần x (10' tự tìm + 15' chờ) ≈ 100 phút/tuần bị chặn việc.
+Em: ~4-5 lần/tuần x (10' tự tìm + 15' chờ) ≈ 100 phút/tuần bị chặn việc.
 Mentor: ~50 phút/tuần bị ngắt việc.
 Team nhận ~2-3 người mới mỗi quý nên cùng bộ câu hỏi lặp lại theo từng đợt.
 
 Success metric:
 - Số câu hỏi lặp phải hỏi mentor: từ 4-5 lần/tuần xuống <= 2 lần/tuần
-  (cách đo: tôi tự đếm trong 3 tuần liên tiếp).
+  (cách đo: em tự đếm trong 3 tuần liên tiếp).
 - Thời gian bị chặn trung bình mỗi lần: từ ~25 phút xuống dưới 10 phút.
 - Ràng buộc an toàn: không tăng số lần làm sai vì tin vào câu trả lời sai
   (đếm số lần phải làm lại do thông tin sai).
@@ -218,7 +219,7 @@ FUTURE STATE — ~5 phút/lần
 
 [1 Hỏi trợ lý tra tài liệu nội bộ: 1' - AI]
 → [2 AI trả lời KÈM link nguồn; không có nguồn thì trả lời "không biết": 1']
-→ [3 Tôi mở link gốc tự kiểm: 3']  <-- human boundary
+→ [3 Em mở link gốc tự kiểm: 3']  <-- human boundary
 → [4 Vẫn không ra → hỏi mentor ở channel chung (không DM),
      câu trả lời được chốt lại vào FAQ: rule]
 
@@ -236,7 +237,7 @@ File đính kèm: `01-individual-problem-scan-workflow-card-2.png`
 
 ```text
 Problem 1 câu:
-Khi phải sửa code cũ, tôi mất ~15 phút/lần để tìm lại lý do "sao chỗ này lại làm kiểu
+Khi phải sửa code cũ, em mất ~15 phút/lần để tìm lại lý do "sao chỗ này lại làm kiểu
 này" nằm rải trong Slack / Confluence / comment PR, và khoảng một nửa số lần không tìm
 ra nên phải đi hỏi senior.
 
@@ -276,7 +277,7 @@ giải được kho lịch sử đã tồn tại — phần đang gây đau hi�
 
 AI hypothesis:
 AI tìm theo ngữ nghĩa (không phụ thuộc keyword chính xác) trên PR + Slack + Confluence,
-trả về 2-3 đoạn liên quan kèm link gốc để tôi tự đọc và tự kết luận.
+trả về 2-3 đoạn liên quan kèm link gốc để em tự đọc và tự kết luận.
 
 Quick gut:
 [ ] No AI / process fix
@@ -300,10 +301,10 @@ FUTURE STATE — ~6 phút/lần
 
 [1 Hỏi bằng câu tự nhiên + dán đoạn code: 1']
 → [2 AI tìm ngữ nghĩa trên PR/Slack/Confluence, trả 2-3 nguồn kèm link: 2' - AI]
-→ [3 Tôi mở link gốc, tự kết luận giữ hay sửa: 3']  <-- human boundary
+→ [3 Em mở link gốc, tự kết luận giữ hay sửa: 3']  <-- human boundary
 → [4 Vẫn không ra → hỏi senior, sau đó ghi lại thành ADR: rule]
 
-Boundary: AI chỉ trả về nguồn kèm link, KHÔNG kết luận thay tôi rằng logic đó đúng hay
+Boundary: AI chỉ trả về nguồn kèm link, KHÔNG kết luận thay em rằng logic đó đúng hay
 sai, không tự sửa code.
 
 Fallback: AI không đưa được link gốc → bỏ qua kết quả, quay lại git blame + hỏi senior.
@@ -324,13 +325,13 @@ Card #1 — Làm đề cương ôn thi cuối kỳ từ nhiều nguồn rời r�
 **Vì sao (2-3 câu: workflow gì, số đo gì, impact gì):**
 
 ```text
-Workflow 6 bước tôi tự làm mỗi kỳ nên vẽ được chi tiết từng bước và biết rõ bước nào
+Workflow 6 bước em tự làm mỗi kỳ nên vẽ được chi tiết từng bước và biết rõ bước nào
 nghẽn: bước viết lại slide thành mạch kiến thức chiếm 120/375 phút mỗi môn.
 Baseline đo được bằng cách bấm giờ, và chất lượng cũng đo được chứ không cảm tính:
 lấy một đề khóa trước và đếm bao nhiêu phần trăm số câu tìm được nội dung tương ứng
 trong đề cương.
-Impact khoảng 30 giờ/kỳ cho riêng tôi, và vì mỗi kỳ có 2-3 bạn xin dùng lại bản của
-tôi nên chỗ nào tôi tóm thiếu là các bạn cũng thiếu theo — cả nhóm trong lớp đều gặp
+Impact khoảng 30 giờ/kỳ cho riêng em, và vì mỗi kỳ có 2-3 bạn xin dùng lại bản của
+em nên chỗ nào em tóm thiếu là các bạn cũng thiếu theo — cả nhóm trong lớp đều gặp
 nên validate nhanh được ngay trong buổi lab.
 ```
 
@@ -344,8 +345,8 @@ nên validate nhanh được ngay trong buổi lab.
 ```
 
 **AI phản biện Card (nếu có):**
-- Điểm yếu AI chỉ ra: metric ban đầu tôi viết là "đề cương tốt hơn, ôn nhanh hơn" — không đo được; bottleneck ban đầu gộp chung bước 4 (đối chiếu đề cũ) và bước 5 (viết đề cương) thành một; phần non-AI alternative ban đầu bị bỏ trống nên trông như đang mặc định phải dùng AI.
-- Tôi sửa gì: tách metric thành 2 phần có cách đo cụ thể (thời gian bấm giờ 3 môn + % câu đề cũ được phủ); tách bước 4 và bước 5 để chỉ đúng 1 bottleneck là bước viết lại; bổ sung phương án Rule (template + đề cương khóa trước) và tự ghi rõ điểm yếu của nó thay vì bỏ qua.
+- Điểm yếu AI chỉ ra: metric ban đầu em viết là "đề cương tốt hơn, ôn nhanh hơn" — không đo được; bottleneck ban đầu gộp chung bước 4 (đối chiếu đề cũ) và bước 5 (viết đề cương) thành một; phần non-AI alternative ban đầu bị bỏ trống nên trông như đang mặc định phải dùng AI.
+- Em sửa gì: tách metric thành 2 phần có cách đo cụ thể (thời gian bấm giờ 3 môn + % câu đề cũ được phủ); tách bước 4 và bước 5 để chỉ đúng 1 bottleneck là bước viết lại; bổ sung phương án Rule (template + đề cương khóa trước) và tự ghi rõ điểm yếu của nó thay vì bỏ qua.
 
 ### Self-check nộp phần 01
 - [x] Có 5+ problems + top 3 Cards đủ field
