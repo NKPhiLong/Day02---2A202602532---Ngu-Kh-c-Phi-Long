@@ -69,15 +69,9 @@ Chọn 3-4 câu trong 6 câu dưới để viết thành đoạn 8-12 câu (khô
 **Reflection:**
 
 ```text
-Lúc mới vào lab em cứ nghĩ chọn bài nào cũng được, miễn nghe có vẻ dùng AI được. Đến khi
-nghe Thuý trình bày bài chốt doanh số tháng, mất tận 5 ngày mỗi tháng, em mới thấy bài đó
-đau hơn hẳn ba bài của em. Nhưng cuối cùng nhóm vẫn không chọn nó, vì chỉ mình Thuý hiểu
-nghiệp vụ kế toán, bốn đứa còn lại ngồi nghe mà không biết hỏi gì. Chỗ này em nhớ lâu: bài
-đau đến mấy mà cả nhóm không challenge được thì cũng khó làm chặt trong một buổi.
-
 Em cũng tự thấy mình bị solution-first. Ba bài em chuẩn bị lúc đầu toàn dừng ở Rule với
 Workflow, em thấy ít AI quá nên định đổi sang bài khác cho hoành tráng hơn, may là nghĩ lại
-kịp. Em giữ nguyên ba bài nhưng chọn mỗi bài một mức Rule, Workflow, Agent để còn có cái mà
+kịp. Em giữ nguyên ba bài nhưng chọn mỗi bài một mức Rule, Workflow, Agent để còn có thể mà
 so với nhau.
 
 Bài điều tra bug từ log là bài em tự tin nhất, vậy mà bị hỏi đúng một câu em trả lời không
